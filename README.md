@@ -1,10 +1,18 @@
-📌 Overview
+Here is the **complete final markdown README** — clean, formatted, and ready to paste directly into your GitHub repository.
+(**Everything included: dashboard, models, pipeline, screenshots placeholders, usage, installation, structure, etc.**)
 
-This project is a Credit Risk Prediction System built using PySpark + MLlib, designed to evaluate an applicant’s creditworthiness using multiple machine learning models. The system processes three datasets — Australian, German, and Taiwan credit datasets — and compares the performance of various classification algorithms.
+---
 
-Along with machine learning modeling, an interactive Power BI dashboard is created to visually analyze risk factors, dataset distribution, and model insights.
+# 📊 **Credit Risk Prediction System — PySpark + ML + Power BI**
 
-🗂️ Project Structure
+A complete **Credit Risk Prediction** project using **PySpark**, **Machine Learning**, and a fully documented **Power BI Dashboard**.
+This system analyzes credit datasets from Australia, Germany, and Taiwan and predicts whether an applicant is **high risk** or **low risk**.
+
+---
+
+## 🗂️ **Project Structure**
+
+```
 Credit-Risk-Prediction/
 │
 ├── data/
@@ -19,188 +27,132 @@ Credit-Risk-Prediction/
 │
 ├── powerbi/
 │   ├── credit_risk_dashboard.pbix
-│   ├── dashboard_screenshots/
-│
-├── reports/
-│   ├── Credit_Risk_Report.pdf
+│   ├── screenshots/
+│       ├── overview_page.png
+│       ├── demographic_insights.png
+│       ├── model_performance.png
 │
 ├── src/
 │   ├── preprocessing.py
 │   ├── train_models.py
 │   ├── evaluation.py
 │
+├── reports/
+│   ├── Credit_Risk_Report.pdf
+│
+├── requirements.txt
 └── README.md
+```
 
-📥 Input Datasets
+---
 
-The project uses three widely used financial datasets:
+# 📥 **Datasets**
 
-Australian Credit Approval Dataset
+This project uses 3 standard credit datasets:
 
-German Credit Dataset
+### **1. Australian Credit Approval Dataset**
 
-Taiwan Credit Card Default Dataset
+### **2. German Credit Dataset**
 
-Each dataset includes demographic, financial, and credit history attributes.
+### **3. Taiwan Credit Card Default Dataset**
 
-🔧 Technologies Used
-Data Engineering & ML
+Each contains financial, demographic, and behavioral attributes to classify customers as **Good Credit** or **Bad Credit**.
 
-PySpark (Spark SQL, Spark MLlib)
+---
 
-Python
+# 🔧 **Technology Stack**
 
-Pandas, NumPy, Matplotlib
+### **Programming & Processing**
 
-Machine Learning Models
+* PySpark (MLlib, Spark SQL)
+* Python
+* Pandas, NumPy
 
-Multilayer Perceptron (MLP)
+### **Machine Learning Models**
 
-Random Forest
+* Random Forest
+* Gradient Boosting
+* XGBoost
+* KNN
+* Decision Tree
+* AdaBoost
+* LightGBM
+* CART
+* ANN (Keras / PyTorch)
+* MLP (Spark MLlib)
 
-Gradient Boosting
+### **Visualization**
 
-XGBoost
+* Power BI (Interactive Dashboard)
+* Matplotlib (Model comparison graphs)
 
-KNN
+---
 
-ANN (PyTorch/Keras)
+# ⚙️ **Project Workflow**
 
-Decision Tree
+## **1️⃣ Data Preprocessing**
 
-AdaBoost
+✔ Handle missing values
+✔ Encode categorical variables
+✔ Feature scaling
+✔ Class balancing (if needed)
+✔ Train/test split
 
-LightGBM
+---
 
-CART
+## **2️⃣ Model Training**
 
-Visualization
+All ML models are trained on all datasets:
 
-Power BI
+| Model             | Australian | German | Taiwan |
+| ----------------- | ---------- | ------ | ------ |
+| Random Forest     | ✔          | ✔      | ✔      |
+| XGBoost           | ✔          | ✔      | ✔      |
+| ANN               | ✔          | ✔      | ✔      |
+| KNN               | ✔          | ✔      | ✔      |
+| Gradient Boosting | ✔          | ✔      | ✔      |
+| Decision Tree     | ✔          | ✔      | ✔      |
+| AdaBoost          | ✔          | ✔      | ✔      |
+| LightGBM          | ✔          | ✔      | ✔      |
+| CART              | ✔          | ✔      | ✔      |
 
-Matplotlib (for model comparison charts)
+Hyperparameter tuning performed using:
 
-⚙️ Steps Performed
-1️⃣ Data Preprocessing
+* Grid Search
+* Cross-Validation (k-fold)
 
-Handling missing values
+---
 
-Feature engineering
+## **3️⃣ Model Evaluation Metrics**
 
-One-hot encoding
+Each model is evaluated on:
 
-Label indexing
+* Accuracy
+* Precision
+* Recall
+* F1-score
+* AUC
+* Log Loss
+* Confusion Matrix
 
-Train-test split
+All results are visualized in comparison charts.
 
-Scaling (MinMaxScaler / StandardScaler)
 
-2️⃣ Model Training
 
-Each dataset is trained using all algorithms.
-Hyperparameter tuning is performed using:
 
-Grid Search
+Contains:
 
-Cross-validation
+* Dataset explanation
+* ML pipeline
+* Model comparison
+* Power BI dashboard insights
+* Conclusions
 
-3️⃣ Model Evaluation
+---
 
-Metrics captured:
+# 👨‍💻 **Author**
 
-Accuracy
+**Anand Dubey**
+Research Intern | Data Analyst | ML Engineer
+Python | PySpark | SQL | Power BI
 
-Precision
-
-Recall
-
-F1-score
-
-AUC
-
-Log Loss
-
-Confusion Matrix
-
-A visual comparison graph is generated for all algorithms.
-
-📊 Power BI Dashboard (Included)
-
-A fully designed Power BI dashboard is included in the project folder (powerbi/credit_risk_dashboard.pbix).
-
-Dashboard Sections
-1️⃣ Overview Page
-
-Total applicants
-
-Default vs Non-default ratio
-
-Risk distribution
-
-Credit score segmentation
-
-2️⃣ Customer Demographics
-
-Age distribution
-
-Gender split
-
-Education level
-
-Marital status
-
-3️⃣ Financial Insights
-
-Loan amount distribution
-
-Income analysis
-
-Purpose of credit
-
-Historical repayment patterns
-
-4️⃣ Model Insights
-
-Accuracy of each model
-
-AUC comparison chart
-
-Best-performing model indicator
-
-5️⃣ Filters
-
-By dataset (Australian / German / Taiwan)
-
-By income category
-
-By age group
-
-By risk level
-
-📈 Model Performance Visualization
-
-A comparative bar graph is generated showing:
-
-Accuracy
-
-F1 Score
-
-AUC
-
-This helps in identifying the best model for each dataset.
-
-🧾 Report
-
-A complete PDF report is included under /reports/Credit_Risk_Report.pdf, covering:
-
-Data description
-
-Preprocessing methods
-
-Model tuning
-
-Evaluation
-
-Power BI dashboard explanation
-
-Final conclusions
