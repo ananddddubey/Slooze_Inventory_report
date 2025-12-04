@@ -1,7 +1,4 @@
-Here is the **complete final markdown README** — clean, formatted, and ready to paste directly into your GitHub repository.
-(**Everything included: dashboard, models, pipeline, screenshots placeholders, usage, installation, structure, etc.**)
 
----
 
 # 📊 **Credit Risk Prediction System — PySpark + ML + Power BI**
 
